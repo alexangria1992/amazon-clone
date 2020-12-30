@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-
+import Header from './Header';
 function App() {
   return (
     <Router>
@@ -16,10 +16,11 @@ function App() {
             <Route path="/checkout">
               <h1>Checkout</h1>
             </Route>
-            <Router path="/login">
+            <Route path="/login">
               <h1>Login Page</h1>
-            </Router>
+            </Route>
             <Route path="/">
+              <Header/>
               <h1>HOME PAGE!!!!</h1>
             </Route>
           </Switch>
