@@ -5,9 +5,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
 import './App.css';
 import Header from './Header';
+import Home from './Home'
+
+
 function App() {
   return (
     <Router>
@@ -21,7 +23,7 @@ function App() {
             </Route>
             <Route path="/">
               <Header/>
-     
+              <Home/>
             </Route>
           </Switch>
         </div>
